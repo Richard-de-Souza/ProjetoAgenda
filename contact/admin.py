@@ -10,3 +10,9 @@ class ContactAdmin(admin.ModelAdmin):
     list_per_page = 1
     list_max_show_all = 200
     list_display_links = 'id',
+
+
+@admin.register(models.Category)
+class CategoryAdmin(admin.ModelAdmin):
+    name = 'name'
+    ordering = '-id',
